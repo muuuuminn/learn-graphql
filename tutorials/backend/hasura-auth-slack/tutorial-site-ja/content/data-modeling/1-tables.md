@@ -1,7 +1,7 @@
 ---
-title: "slackクローン用テーブル"
-metaTitle: "テーブル | Hasura Auth Slackチュートリアル"
-metaDescription: "slackクローン用データモデリング"
+title: 'slackクローン用テーブル'
+metaTitle: 'テーブル | Hasura Auth Slackチュートリアル'
+metaDescription: 'slackクローン用データモデリング'
 ---
 
 まずはデータモデルを見てみましょう。
@@ -16,7 +16,7 @@ metaDescription: "slackクローン用データモデリング"
 
 ## ワークスペース {#workspace}
 
-Slackアプリには、ユーザーが参加できるワークスペースがあります。これは、ワークスペースの所有者と管理者によって管理されます。以下のテーブルは、この要件を処理します。
+Slack アプリには、ユーザーが参加できるワークスペースがあります。これは、ワークスペースの所有者と管理者によって管理されます。以下のテーブルは、この要件を処理します。
 
 - `workspace`、`workspace_member`、`workspace_user_type`
 
@@ -26,7 +26,7 @@ Slackアプリには、ユーザーが参加できるワークスペースがあ
 
 - `channel`、`channel_member`、`channel_thread`、`channel_thread_message`
 
-最期のモデルには、基本的な関連列があり、おおむね以下のようになります。
+最終的なモデルは、基本的なリレーショナルカラムを持ち、おおよそ次のようになります。
 
 ![Slackデータモデル](https://graphql-engine-cdn.hasura.io/learn-hasura/assets/graphql-hasura-auth/slack-datamodel.png)
 
